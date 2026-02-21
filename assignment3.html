@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AZ News</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#f4f4f4;
+}
+.container{
+    width:1100px;
+    margin:auto;
+    background:#fff;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+.logo span{
+    color:red;
+}
+.banner{
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    color:#fff;
+    padding:15px 40px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+
+nav{
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:10px 0;
+}
+nav ul li{
+    margin:0 20px;
+    cursor:pointer;
+}
+nav ul li:hover{
+    color:red;
+}
+
+.trending{
+    padding:15px;
+}
+.trending span{
+    background:red;
+    color:#fff;
+    padding:5px 10px;
+    font-size:12px;
+    border-radius:3px;
+    margin-right:10px;
+}
+
+
+.content{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+
+.left{
+    flex:2;
+}
+.main-post{
+    position:relative;
+}
+.main-post img{
+    width:100%;
+    border-radius:5px;
+}
+.category{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:gold;
+    padding:5px 10px;
+    font-size:12px;
+    font-weight:bold;
+}
+.title{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    width:80%;
+}
+
+
+.small-posts{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+.small-post img{
+    width:100%;
+    border-radius:5px;
+}
+.small-post p{
+    font-size:14px;
+    margin-top:5px;
+}
+
+
+.sidebar{
+    flex:1;
+}
+.side-post{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+.side-post img{
+    width:80px;
+    height:60px;
+    object-fit:cover;
+    border-radius:5px;
+}
+.tag{
+    font-size:10px;
+    background:#eee;
+    padding:3px 6px;
+    display:inline-block;
+    margin-bottom:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="top-bar">
+        <div class="logo"><span>AZ</span> News</div>
+        <div class="banner">EVENT - 24th November</div>
+    </div>
+
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Category</li>
+            <li>About</li>
+            <li>Latest News</li>
+            <li>Contact</li>
+            <li>Pages</li>
+        </ul>
+    </nav>
+
+   
+    <div class="trending">
+        <span>TRENDING NOW</span>
+        Latest updates from around the world.
+    </div>
+
+
+    <div class="content">
+
+        
+        <div class="left">
+
+            <div class="main-post">
+               
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80">
+                <div class="category">EVENT</div>
+                <div class="title">
+                    International Tech & Business Conference 2024
+                </div>
+            </div>
+
+            <div class="small-posts">
+                <div class="small-post">
+                    
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80">
+                    <p>New technology trends shaping the future</p>
+                </div>
+
+                <div class="small-post">
+                   
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80">
+                    <p>Urban development projects announced</p>
+                </div>
+
+                <div class="small-post">
+                   
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80">
+                    <p>Climate awareness and environmental updates</p>
+                </div>
+            </div>
+
+        </div>
+
+    
+        <div class="sidebar">
+
+            <div class="side-post">
+             
+                <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=200&q=80">
+                <div>
+                    <div class="tag">EVENT</div>
+                    Live events and cultural festivals
+                </div>
+            </div>
+
+            <div class="side-post">
+               
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=200&q=80">
+                <div>
+                    <div class="tag">TRAVEL</div>
+                    Popular travel destinations this year
+                </div>
+            </div>
+
+            <div class="side-post">
+            
+                <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?auto=format&fit=crop&w=200&q=80">
+                <div>
+                    <div class="tag">AUTO</div>
+                    Latest motorcycle launches and reviews
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
